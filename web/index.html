@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="powerComparator">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test Task</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="appController.js"></script>
+</head>
+<body ng-controller="ComparatorController as comparator">
+<div ng-repeat="company in comparator.companies">
+    <img src="{{company.logoUrl}}" alt="Icon" style="width:11%;height:11%;">
+    <li ng-repeat="benefit in company.customerBenefits">{{benefit}}</li>
+    <br>
+    <text style="color:blue">Customer satisfaction:</text>
+    <div id="reyt">
+    <div class="rate">
+        <div ng-style="{'width':'{{company.customerSatisfaction}}%'}"></div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

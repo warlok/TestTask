@@ -1,0 +1,50 @@
+body {
+    font-size:18px
+}
+html {
+    margin-left:10px;
+}
+img {
+    margin-bottom:10px;
+}
+#reyt {
+  margin:1px 5px 0 0;
+    clear:both;
+ /* float:left;*/
+  display:block;
+    margin-bottom:10px;
+}
+.rate {
+  background: url(stars.png) 0px 0px repeat-x;
+  width:159px;
+  height:32px;
+  margin-right:0px;
+  padding:0px 0px 2px 0px;
+    clear:both;
+    /*margin-bottom:10px;*/
+    /* float:left;*/
+}
+.rate div {
+  background: url(stars.png) 0px -32px repeat-x;
+  width: 0;
+  height: 100%;
+    clear:both;
+    /*margin-bottom:10px;*/
+    /* float:left;*/
+}
+ul
+{
+list-style-type:none;
+padding: 0px;
+margin: 0px;
+    margin-left:5px;
+}
+li
+{
+    list-style-type:none;
+background-image: url(sqpurple.gif);
+background-repeat: no-repeat;
+background-position: 0px 7px;
+padding-left: 14px;
+    margin-left:5px;
+}
