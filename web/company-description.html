@@ -1,0 +1,28 @@
+<div ng-repeat="company in comparator.companies" id="companyBlock">
+    <table width="98%">
+        <tr>
+            <td>
+                <company-logo></company-logo>
+            </td>
+            <td align="right">
+                <div><text>Spot price:</text>
+                     <text style="font-size: 20px;margin-right: 40px">{{company.price | currency : $ : 0}}</text>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <company-benefits></company-benefits>
+            </td>
+            <td ng-controller="redirectController as redirect" align="right">
+                <button ng-click="redirect(company.orderUrl)" id="order">Order</button><br />
+                <button ng-click="redirect(company.contactUrl)">Get contacted</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <company-rating></company-rating>
+            </td>
+        </tr>
+    </table>
+</div>
